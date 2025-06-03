@@ -1,0 +1,7 @@
+estou fazendo um portifolio para apresentação do meu perfil como desenvolvedor, quero um texto resumido do que faço e uma temática clean e puxada para o dark theme, quero plano de fundo animado e umas animações que diferencie minha página de qualquer outra. seja criativo. 
+
+siga a seguinte estrutura:
+
+1. Deixe um espaço no código para colocar uma foto minha
+2. foto / nome / link e competências. 
+3. colocar a logo em png de cada competência em baixo do nome, sendo elas: HTML, CSS, C++ e JavaScript
