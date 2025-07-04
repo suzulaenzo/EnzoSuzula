@@ -1,0 +1,366 @@
+/* style.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0d1117;
+  color: #c9d1d9;
+  overflow-x: hidden;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 6rem 2rem 2rem 2rem;
+  text-align: center;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  animation: fadeIn 1.5s cubic-bezier(.77,0,.18,1) both;
+}
+.profile-image {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: 4px solid #58a6ff;
+  background-image: url('imagenspng/mypic.jpeg');
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 32px 0 #58a6ff33;
+  margin-bottom: 0;
+  animation: profilePop 1.2s cubic-bezier(.77,0,.18,1) 0.2s both;
+}
+@keyframes profilePop {
+  0% { transform: scale(0.7); opacity: 0; }
+  80% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); }
+}
+.profile-info h1 {
+  font-size: 2.2rem;
+  color: #fff;
+  margin-bottom: 0.2rem;
+}
+.profile-info h2 {
+  font-size: 1.1rem;
+  color: #58a6ff;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.bio {
+  max-width: 500px;
+  margin: 1rem auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #b1bac4;
+}
+.social-links {
+  margin-top: 1.2rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.social-links a {
+  color: #c9d1d9;
+  background: #161b22;
+  border-radius: 20px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 8px 0 #58a6ff22;
+}
+.social-links a:hover {
+  background: linear-gradient(90deg, #58a6ff, #f02eaa);
+  color: #fff;
+  box-shadow: 0 4px 16px 0 #f02eaa33;
+}
+
+.skills-section {
+  margin-bottom: 3rem;
+  animation: fadeIn 2s cubic-bezier(.77,0,.18,1) 0.2s both;
+}
+.skills-section h2 {
+  color: #58a6ff;
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+}
+.skills {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.skills img {
+  width: 48px;
+  height: 48px;
+  filter: drop-shadow(0 2px 8px #58a6ff33);
+  transition: transform 0.4s cubic-bezier(.77,0,.18,1), filter 0.4s;
+}
+.skills img:hover {
+  transform: scale(1.25) rotate(-8deg);
+  filter: none;
+  background: none !important;
+  box-shadow: none !important;
+}
+.skills img[alt="JavaScript"] {
+  width: 61px;
+  height: 61px;
+  object-fit: contain;
+  align-self: flex-start;
+  margin-top: -6px;
+}
+
+.projects-section {
+  margin-bottom: 3rem;
+  animation: fadeIn 2.5s cubic-bezier(.77,0,.18,1) 0.2s both;
+}
+.projects-section h2 {
+  color: #58a6ff;
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+}
+.projects {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.project-card {
+  background: #0d1117;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 #58a6ff22;
+  padding: 2rem 1.5rem;
+  min-width: 260px;
+  max-width: 320px;
+  transition: transform 0.4s cubic-bezier(.77,0,.18,1), box-shadow 0.4s;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: radial-gradient(circle, rgba(88,166,255,0.07) 0%, transparent 70%),
+              radial-gradient(circle, rgba(50, 79, 245, 0.05) 0%, transparent 90%);
+  background-size: 300% 300%;
+  animation: gradientShift 20s ease infinite;
+  z-index: 0;
+  pointer-events: none;
+}
+.project-card * { position: relative; z-index: 1; }
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 32px 0 rgba(88,166,255,0.04);
+  border: 2px solid rgba(88,166,255,0.04);
+}
+.project-card:hover::before {
+  background: radial-gradient(circle, rgba(88,166,255,0.03) 0%, transparent 70%),
+              radial-gradient(circle, rgba(50, 79, 245, 0.02) 0%, transparent 90%) !important;
+}
+.project-card h3 {
+  color: #58a6ff;
+  margin-bottom: 0.5rem;
+}
+.project-card p {
+  color: #b1bac4;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.project-card a {
+  color: #fff;
+  background: linear-gradient(90deg, #58a6ff, #f02eaa);
+  padding: 0.4rem 1rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.3s, color 0.3s;
+}
+.project-card a:hover {
+  background: #fff;
+  color: #f02eaa;
+}
+
+.contact-section {
+  width: 50%;
+  margin-bottom: 2rem;
+  animation: fadeIn 3s cubic-bezier(.77,0,.18,1) 0.2s both;
+}
+.contact-section h2 {
+  color: #58a6ff;
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.contact-form input,
+.contact-form textarea {
+  background: #161b22;
+  border: 1px solid #30363d;
+  color: #c9d1d9;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: none;
+  transition: border 0.3s;
+}
+.contact-form textarea {
+  min-height: 22px;
+  transition: border 0.3s, min-height 0.4s cubic-bezier(.77,0,.18,1);
+}
+.contact-form textarea.expanded {
+  min-height: 150px;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 1.5px solid #58a6ff;
+  outline: none;
+}
+.contact-form button {
+  background: linear-gradient(90deg, #58a6ff, #005bea);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.4s, color 0.3s;
+}
+.contact-form button:hover {
+  background: linear-gradient(270deg, #005bea, #58a6ff);
+  color: #fff;
+  filter: brightness(1.08);
+}
+
+.background-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle, rgba(88,166,255,0.15) 0%, transparent 70%),
+              radial-gradient(circle, rgba(50, 79, 245, 0.11) 0%, transparent 90%);
+  background-size: 300% 300%;
+  animation: gradientShift 20s ease infinite;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Partículas animadas com JS (particles.js) */
+canvas#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideDown {
+  from { transform: translateY(-60px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    padding: 6rem 0.5rem 2rem 0.5rem;
+  }
+  .profile-section {
+    gap: 1rem;
+  }
+  .skills {
+    gap: 1rem;
+  }
+  .projects {
+    gap: 1rem;
+  }
+  .project-card {
+    min-width: 90vw;
+    max-width: 98vw;
+    padding: 1.2rem 0.5rem;
+  }
+}
+
+/* Gradientes e destaques em azul */
+.header nav a::after,
+.social-links a:hover,
+.contact-form button,
+.project-card a {
+  background: linear-gradient(90deg, #58a6ff, #005bea) !important;
+  color: #fff !important;
+  border-color: #58a6ff !important;
+}
+
+.project-thumb {
+  width: 100%;
+  max-width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 2px 12px 0 #58a6ff22;
+  margin-bottom: 1rem;
+  background: #222;
+}
+
+.lang-toggle {
+  position: fixed;
+  top: 24px;
+  right: 32px;
+  background: #222c36;
+  color: #58a6ff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background 0.2s, color 0.2s;
+}
+.lang-toggle:hover {
+  background: #58a6ff;
+  color: #fff;
+}
