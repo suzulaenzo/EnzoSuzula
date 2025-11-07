@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const translations = {
       pt: {
         title: "Estudante de Engenharia de Software",
-        bio: "Entusiasta por tecnologia e desenvolvimento de soluções inovadoras. Atualmente curso Engenharia de Software e busco sempre criar projetos modernos, performáticos e com código limpo. Tenho experiência em desenvolvimento web, C++, JavaScript e estou sempre disposto a aprender mais.",
+        bio: "Entusiasta por tecnologia e desenvolvimento de soluções inovadoras. Atualmente curso Engenharia de Software e busco sempre criar projetos modernos, performáticos e com código limpo. Tenho experiência em Desenvolvimento Web Full Stack. Atualmente estou aprendendo React, Java e JavaScript. Estou sempre disposto a aprender mais.",
         skills: "Competências",
         projects: "Projetos em Destaque",
         project1: "Site Farmácia",
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
       },
       en: {
         title: "Software Engineering Student",
-        bio: "Enthusiast for technology and innovative solutions development. Currently studying Software Engineering and always seeking to create modern, high-performance projects with clean code. I have experience in Full Stack Web Development. Currently, I'm learning Java and JavaScript, and I'm always willing to learn more.",
+        bio: "I am enthusiastic about technology and developing innovative solutions. I am currently studying Software Engineering and always strive to create modern, high-performance projects with clean code. I have experience in Full Stack Web Development. I am currently learning React, Java, and JavaScript. I am always willing to learn more.",
         skills: "Skills",
         projects: "Featured Projects",
         project1: "Pharmacy Website",
