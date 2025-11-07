@@ -140,15 +140,17 @@ body {
   background: #0d1117;
   border-radius: 18px;
   box-shadow: 0 4px 24px 0 #58a6ff22;
-  padding: 2rem 1.5rem;
-  min-width: 260px;
-  max-width: 320px;
+  padding: 2.5rem 2rem; 
+  min-width: 400px; 
+  max-width: 500px; 
+  width: 100%;
   transition: transform 0.4s cubic-bezier(.77,0,.18,1), box-shadow 0.4s;
   position: relative;
   overflow: hidden;
   border: 2px solid transparent;
   cursor: pointer;
 }
+
 .project-card::before {
   content: '';
   position: absolute;
@@ -161,6 +163,7 @@ body {
   z-index: 0;
   pointer-events: none;
 }
+
 .project-card * { position: relative; z-index: 1; }
 .project-card:hover {
   transform: scale(1.05);

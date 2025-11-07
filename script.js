@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Lógica de troca de idioma
+    // Troca de idioma
     const translations = {
       pt: {
         title: "Estudante de Engenharia de Software",
