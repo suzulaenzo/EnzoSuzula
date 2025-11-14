@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const translations = {
       pt: {
         title: "Desenvolvedor Full Stack",
-        bio: "Entusiasta por tecnologia e desenvolvimento de soluções inovadoras. Atualmente curso Engenharia de Software e busco sempre criar projetos modernos, performáticos e com código limpo. Tenho experiência em Desenvolvimento Web Full Stack. Atualmente estou aprendendo React, Java e JavaScript. Estou sempre disposto a aprender mais.",
+        bio: "Entusiasta por tecnologia e desenvolvimento de soluções inovadoras. Atualmente curso Engenharia de Software e busco sempre criar projetos modernos, performáticos e com código limpo. Tenho experiência em Desenvolvimento Web Full Stack. Atualmente estou me aprofundando em React e TypeScript. Estou sempre disposto a aprender mais.",
         skills: "Competências",
         projects: "Projetos em Destaque",
         project1Title: "Portal do Contribuinte",
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       en: {
         title: "Full Stack Developer",
-        bio: "I am enthusiastic about technology and developing innovative solutions. I am currently studying Software Engineering and always strive to create modern, high-performance projects with clean code. I have experience in Full Stack Web Development. I am currently learning React, Java, and JavaScript. I am always willing to learn more.",
+        bio: "I am enthusiastic about technology and developing innovative solutions. I am currently studying Software Engineering and always strive to create modern, high-performance projects with clean code. I have experience in Full Stack Web Development. I'm currently delving deeper into React and TypeScript. I am always willing to learn more.",
         skills: "Skills",
         projects: "Featured Projects",
         project1Title: "Portal do Contribuinte",
